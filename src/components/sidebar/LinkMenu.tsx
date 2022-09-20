@@ -14,7 +14,6 @@ import { useRouter } from 'next/router';
 
 const LinkMenu = ({ icon, textLink, endIcon, linkUrl, isActive }: any) => {
     const [isShown, setIsShown] = useState<any>(false);
-    // const [isActive, setIsActive] = useState<any>(false);
     const router = useRouter();
 
     return (
@@ -24,7 +23,7 @@ const LinkMenu = ({ icon, textLink, endIcon, linkUrl, isActive }: any) => {
                     <div className="flex before:border-2 before:border-[#21B8F9] active:border-black before:h-[32px] before:rounded-full before:w-[3px]">
                         <MenuItem className=" w-full ml-[7px] rounded-[4px] bg-[#F7F7F7] text-[#21B8F9] h-8 ">
                             <ListItemIcon className={'text-[#21B8F9] text-xl'}>{icon}</ListItemIcon>
-                            <ListItemText className=" text-sm">{textLink}</ListItemText>
+                            <ListItemText className=" text-sm text-[#21B8F9]">{textLink}</ListItemText>
                             <Typography>{endIcon}</Typography>
                         </MenuItem>
                     </div>
@@ -33,11 +32,11 @@ const LinkMenu = ({ icon, textLink, endIcon, linkUrl, isActive }: any) => {
                         <MenuItem
                             onMouseEnter={() => setIsShown(true)}
                             onMouseLeave={() => setIsShown(false)}
-                            className=" w-full ml-[7px] rounded-[4px] text-black hover:bg-[#F7F7F7] hover:text-[#21B8F9] h-8 "
+                            className=" w-full ml-[7px] rounded-[4px] hover:bg-[#F7F7F7] hover:text-[#21B8F9] h-8 "
                         >
-                            <ListItemIcon className={isShown ? ' text-[#21B8F9] text-xl' : 'text-black text-xl'}>{icon}</ListItemIcon>
+                            <ListItemIcon className={isShown ? ' text-[#21B8F9] text-xl' : 'text-[#103B66] text-xl'}>{icon}</ListItemIcon>
                             <ListItemText className=" text-sm">{textLink}</ListItemText>
-                            <Typography>{endIcon}</Typography>
+                            <Typography component={'div'}>{endIcon}</Typography>
                         </MenuItem>
                     </div>
                 )}

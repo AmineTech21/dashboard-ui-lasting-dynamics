@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    @apply font-Noto
+h1, h2, h3, h4, h5, h6, p, a, div, input, select {
+    @apply font-Noto text-[#103B66]
    }

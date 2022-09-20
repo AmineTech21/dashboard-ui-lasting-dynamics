@@ -25,7 +25,7 @@ const DropdownMenu = ({ subMenus, icon, textLink }: any) => {
                     className=" ml-[7px] rounded-[4px] text-black hover:bg-[#F7F7F7] hover:text-[#21B8F9] h-8"
                     onClick={handleClick}
                 >
-                    <ListItemIcon className={isShown ? ' text-[#21B8F9] text-xl min-w-[36px]' : 'text-black text-xl min-w-[36px]'}>{icon}</ListItemIcon>
+                    <ListItemIcon className={isShown ? ' text-[#21B8F9] text-xl min-w-[36px]' : 'text-[#103B66] text-xl min-w-[36px]'}>{icon}</ListItemIcon>
                     <ListItemText className=" text-sm" primary={textLink} />
                     {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
