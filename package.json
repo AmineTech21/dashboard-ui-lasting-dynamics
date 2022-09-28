@@ -12,10 +12,17 @@
         "@material-ui/icons": "^4.11.3",
         "@mui/icons-material": "^5.10.3",
         "@mui/material": "^5.10.5",
+        "@types/react-slick": "^0.23.10",
+        "@types/slick-carousel": "^1.6.37",
+        "axios": "^0.27.2",
+        "install": "^0.13.0",
         "next": "latest",
+        "npm": "^8.19.2",
         "react": "18.1.0",
         "react-dom": "18.1.0",
-        "react-icons": "^4.4.0"
+        "react-icons": "^4.4.0",
+        "react-slick": "^0.29.0",
+        "slick-carousel": "^1.8.1"
     },
     "devDependencies": {
         "@types/node": "17.0.35",

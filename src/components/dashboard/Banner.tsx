@@ -3,7 +3,7 @@ import React from 'react';
 import  {FiExternalLink, FiUser}  from 'react-icons/fi';
 import ListItemIcon from '@mui/material/ListItemIcon';
 
-const BannerGradient = () => {
+const Banner = () => {
     return (
         <>
             <div className="flex justify-between ml-10 mr-10 mt-10 mb-[50px] items-center z-10">
@@ -20,4 +20,4 @@ const BannerGradient = () => {
     );
 };
 
-export default BannerGradient;
+export default Banner;

@@ -1,13 +1,15 @@
 import React from 'react';
-import BannerGradient from './BannerGradient';
+import Banner from './Banner';
 import Navbar from './Navbar';
+import PrimarySection from './PrimarySection';
 
 const Dashboard = () => {
     return (
         <>
-            <div className="relative flex flex-col w-full">
+            <div className="relative flex flex-col w-full ml-[255px] bg-[#f8f9fb]">
                 <Navbar />
-                <BannerGradient />
+                <Banner />
+                <PrimarySection />
             </div>
         </>
     );

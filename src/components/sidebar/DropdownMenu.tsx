@@ -33,12 +33,12 @@ const DropdownMenu = ({ subMenus, icon, textLink }: any) => {
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List className=" bg-[#E9F8FE]" component="div" disablePadding>
                     {subMenus &&
-                        subMenus.map((subMenu: any) => (
-                            <Link href={subMenu.url}>
+                        subMenus.map((subMenu: any, index:any) => (
+                            <Link key={index} href={subMenu.url}>
                                 <ListItemButton className=" text-black hover:bg-[#E9F8FE]  h-8">
                                     {/* <ListItemIcon className={subMenuOpen ? ' text-[#21B8F9] text-xl min-w-[36px]' : 'text-black text-xl min-w-[36px]'}>
-                    {icon}
-                  </ListItemIcon> */}
+                                        {icon}
+                                    </ListItemIcon> */}
                                     <ListItemText className=" font-normal ml-[33px]" primary={subMenu.name} />
                                 </ListItemButton>
                             </Link>
