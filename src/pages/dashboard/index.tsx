@@ -10,7 +10,7 @@ const index = () => {
                 <title>Dashboard</title>
             </Head>
 
-            <div className=" flex">
+            <div className=" flex overflow-x-hidden">
                 <SideBar />
                 <Dashboard />
             </div>

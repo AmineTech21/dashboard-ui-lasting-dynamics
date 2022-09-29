@@ -6,7 +6,7 @@ import PrimarySection from './PrimarySection';
 const Dashboard = () => {
     return (
         <>
-            <div className="relative flex flex-col w-full ml-[255px] bg-[#f8f9fb]">
+            <div className="!relative !flex !flex-col !w-full !ml-[255px] bg-[#f8f9fb]">
                 <Navbar />
                 <Banner />
                 <PrimarySection />

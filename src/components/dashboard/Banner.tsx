@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import  {FiExternalLink, FiUser}  from 'react-icons/fi';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import  {FiExternalLink}  from 'react-icons/fi';
 
 const Banner = () => {
     return (

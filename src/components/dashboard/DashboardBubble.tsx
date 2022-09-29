@@ -4,13 +4,14 @@ import { FiArrowRight, FiEye } from 'react-icons/fi';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Link from 'next/link';
+import { DashboardBubbleInterface } from '../../ts/interfaces';
 
-const DashboardBubble = ({ icon, title, textRight, textLink, iconRight, iconLink, middleSection, xs, md, restTailwindClass, doubleBubble, linkClasses, linkIcon }: any) => {
+const DashboardBubble = ({ icon, title, textRight, textLink, iconRight, iconLink, middleSection, xs, md, restTailwindClass, doubleBubble, linkClasses, linkIcon }: DashboardBubbleInterface) => {
     return (
         <>
             {doubleBubble ? (
                 <>
-                <div className={`${restTailwindClass} mt-6 p-6 bg-white rounded-[10px] shadow-md mr-6 shadow-[#32324738]`}>
+                <div className={`${restTailwindClass} mt-6 p-6 bg-white rounded-[10px] shadow-md shadow-[#32324738]`}>
 
                     <div className="flex justify-between">
                         <div className="flex flex-row items-center">
@@ -19,7 +20,7 @@ const DashboardBubble = ({ icon, title, textRight, textLink, iconRight, iconLink
                         </div>
                         <div className="flex flex-row items-center">
                             <p className=" font-normal text-[14px] text-[#666666]">{textRight}</p>
-                            {iconRight && <ExpandMore className="text-[20px] ml-3" />}
+                            {iconRight && <ExpandMore className="text-[20px]" />}
                         </div>
                     </div>
 
@@ -37,7 +38,7 @@ const DashboardBubble = ({ icon, title, textRight, textLink, iconRight, iconLink
                 </>
             ) : (
                 <>
-                    <Grid className={`${restTailwindClass} p-6 bg-white rounded-[10px] shadow-md mr-6 shadow-[#32324738]`} item xs={xs} md={md}>
+                    <Grid className={`${restTailwindClass} p-6 bg-white rounded-[10px] shadow-md shadow-[#32324738]`} item md={md}>
                         <div className="flex justify-between">
                             <div className="flex flex-row items-center">
                                 <div className="mr-[18px] text-xl">{icon}</div>

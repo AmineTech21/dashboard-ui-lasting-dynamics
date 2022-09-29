@@ -2,15 +2,12 @@ import React from 'react';
 import LinkMenu from './LinkMenu';
 import Divider from '@mui/material/Divider';
 import MenuList from '@mui/material/MenuList';
-import ContentCut from '@mui/icons-material/ContentCut';
 import { FiHome, FiShoppingCart, FiUser, FiTarget, FiTruck, FiDollarSign, FiCreditCard, FiSettings, FiLogOut, FiHelpCircle, FiShare2, FiEye } from 'react-icons/fi';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { TiBrush } from 'react-icons/ti';
 import { GiCog } from 'react-icons/gi';
 import { TbApps } from 'react-icons/tb';
 import DropdownMenu from './DropdownMenu';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import { Badge } from '@mui/material';
 
 const subMenuMarketing = [
     {

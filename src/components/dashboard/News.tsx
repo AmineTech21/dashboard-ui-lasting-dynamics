@@ -10,7 +10,7 @@ const News = () => {
 
     useEffect(() => {
         const loadNews = async () => {
-            const liveNews = await getNews();
+            const liveNews = await getNews("https://saurav.tech/NewsAPI/everything/cnn.json");
             setNews(liveNews);
         };
 
@@ -20,7 +20,7 @@ const News = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
-                {news.map((newsInfo: any, index:any) => {
+                {news.map((newsInfo: any) => {
                     return (
                         <>
                             <Grid key={newsInfo.title} className="h-[100px] mb-8" item xs={6} md={6}>

@@ -32,13 +32,12 @@ const PrimarySection = () => {
 
     return (
         <>
-            <div className=" z-10 ml-[40px] ">
+            <div className=" !z-10 ml-10 mr-10 ">
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container>
                         <DashboardBubble
-                            restTailwindClass={'h-[220px]'}
-                            xs={6}
-                            md={3.7}
+                            restTailwindClass={'h-[220px] mr-6'}
+                            md={3.89}
                             icon={<FiEye />}
                             title={'Visitors'}
                             textRight={'This month'}
@@ -48,9 +47,8 @@ const PrimarySection = () => {
                             iconLink={true}
                         />
                         <DashboardBubble
-                            restTailwindClass={'h-[220px]'}
-                            xs={6}
-                            md={3.7}
+                            restTailwindClass={'h-[220px] mr-6'}
+                            md={3.89}
                             icon={<AiOutlineUnorderedList />}
                             title={'Orders'}
                             textRight={'This month'}
@@ -70,8 +68,7 @@ const PrimarySection = () => {
                             textLink={'10 free tips to increase your sales'}
                         />
                         <DashboardBubble
-                            xs={6}
-                            md={3.7}
+                            md={3.845}
                             icon={<FiTool />}
                             title={'Configure your shop'}
                             middleSection={
@@ -86,9 +83,8 @@ const PrimarySection = () => {
                             iconLink={true}
                         />
                         <DashboardBubble
-                            restTailwindClass={'h-[343px] mt-[-40px] bg-[#F3A35C]'}
-                            xs={6}
-                            md={3.7}
+                            restTailwindClass={'h-[343px] mr-6 mt-[-30px] bg-[#F3A35C]'}
+                            md={3.89}
                             middleSection={
                                 <div className="w-full h-full mt-6 mb-6">
                                     <div className="flex">
@@ -111,15 +107,14 @@ const PrimarySection = () => {
                             }
                         />
                         <DashboardBubble
-                            restTailwindClass={'h-[343px] mt-[-40px]'}
-                            xs={6}
-                            md={3.7}
+                            restTailwindClass={'h-[343px] mr-6 mt-[-30px]'}
+                            md={3.89}
                             icon={<TbApps />}
                             title={'Extensions Marketplace'}
                             middleSection={
                                 // <div className=" mb-6 flex z-10">
-                                    <Slider className='mb-6' {...settings}>
-                                        <div className=" w-[150px]">
+                                    <Slider className='mb-4 w-[400px]' {...settings}>
+                                        <div className=" !w-[150px]">
                                             <div className="flex justify-center items-center mb-1 bg-[#FFA26B] w-[150px] h-[150px] rounded-[10px]">
                                                 <div>
                                                     <Image src={internet} className={''} />
@@ -127,15 +122,15 @@ const PrimarySection = () => {
                                             </div>
                                             <p className="">Connect your own domain </p>
                                         </div>
-                                        <div className=" w-[150px]">
-                                            <div className="flex justify-center items-center mb-1 bg-[#00C48C] w-[150px] h-[150px] rounded-[10px]">
+                                        <div className=" !w-[150px]">
+                                            <div className="flex justify-center items-center mb-1 bg-[#00C48C] h-[150px] rounded-[10px]">
                                                 <div>
                                                     <p className='text-[20px] text-center text-white'> <span className='text-[34px] text-center'>+50</span> <br/> Prodotti</p>
                                                 </div>
                                             </div>
                                             <p className="">Connect your own domain </p>
                                         </div>
-                                        <div className=" w-[150px]">
+                                        <div className=" !w-[150px]">
                                             <div className="flex justify-center items-center mb-1 bg-[#FFA26B] w-[150px] h-[150px] rounded-[10px]">
                                                 <div>
                                                     <Image src={internet} className={''} />
@@ -143,14 +138,15 @@ const PrimarySection = () => {
                                             </div>
                                             <p className="">Connect your own domain </p>
                                         </div>
-                                        <div className=" w-[150px]">
-                                            <div className="flex justify-center items-center mb-1 bg-[#00C48C] w-[150px] h-[150px] rounded-[10px]">
+                                        <div className=" !w-[150px]">
+                                            <div className="flex justify-center items-center mb-1 bg-[#00C48C] h-[150px] rounded-[10px]">
                                                 <div>
                                                     <p className='text-[20px] text-center text-white'> <span className='text-[34px] text-center'>+50</span> <br/> Prodotti</p>
                                                 </div>
                                             </div>
                                             <p className="">Connect your own domain </p>
                                         </div>
+                                        
                                     </Slider>
                                 // </div>
                             }
@@ -159,8 +155,7 @@ const PrimarySection = () => {
                         />
                         <DashboardBubble
                             restTailwindClass={'h-[232px] text-[#00C48C] mt-6 bg-[#000032]'}
-                            xs={6}
-                            md={3.7}
+                            md={3.85}
                             icon={<Image src={trustPilot} />}
                             middleSection={
                                 <div className="mt-[-7px] mb-4">
@@ -176,14 +171,13 @@ const PrimarySection = () => {
                             iconLink={true}
                         />
                         <DashboardBubble
-                            restTailwindClass={'relative mt-6'}
-                            xs={6}
-                            md={7.65}
+                            restTailwindClass={'relative mr-6 mt-6'}
+                            md={8}
                             icon={<FiFileText />}
                             title={'Latest news'}
                             middleSection={
                                 <>
-                                    <div className="absolute left-[565px] top-[28px]">
+                                    <div className="absolute left-[85%] top-[28px]">
                                         <div className="flex items-center text-[#21B8F9]">
                                             <p className="mr-5 text-[#21B8F9] underline">Visit our blog</p>
                                             <FiExternalLink />
@@ -193,7 +187,7 @@ const PrimarySection = () => {
                                 </>
                             }
                         />
-                        <Grid className=" mt-[-40px]" item xs={6} md={3.8}>
+                        <Grid className=" mt-[-40px]" item md={3.81}>
                             <DashboardBubble
                                 doubleBubble={true}
                                 restTailwindClass={'mt-6'}

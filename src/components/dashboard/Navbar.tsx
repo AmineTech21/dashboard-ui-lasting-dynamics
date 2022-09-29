@@ -10,7 +10,7 @@ const Navbar = () => {
             <p className="font-medium text-[17px]">Dashboard</p>
             <div className='flex items-center'>
                 <FiZap className=' w-[18px] h-[20px] mr-[7px]' />
-                <Badge badgeContent={4} color="primary">
+                <Badge className='' badgeContent={4} color="error">
                     <p className='text-[15px]'>What's new</p>
                 </Badge>
             </div>

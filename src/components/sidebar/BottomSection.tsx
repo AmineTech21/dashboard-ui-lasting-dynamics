@@ -1,6 +1,5 @@
-import { MenuItem, NativeSelect, Select, TextField } from '@mui/material';
+import { MenuItem, Select } from '@mui/material';
 import React from 'react';
-import { FiChevronDown } from 'react-icons/fi';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
 const companies = [
