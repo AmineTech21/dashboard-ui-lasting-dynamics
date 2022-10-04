@@ -15,7 +15,7 @@ const LinkMenu = ({ icon, textLink, endIcon, linkUrl }: LinkMenuInterface) => {
     return (
         <>
             <Link href={`${linkUrl}`}>
-                {router.pathname == linkUrl ? (
+                {router.asPath == linkUrl ? (
                     <div className="flex before:border-2 before:border-[#21B8F9] active:border-black before:h-[32px] before:rounded-full before:w-[3px]">
                         <MenuItem className=" w-full !ml-[7px] rounded-[4px] !bg-[#F7F7F7] text-[#21B8F9] h-8 ">
                             <ListItemIcon className={'!text-[#21B8F9] text-xl'}>{icon}</ListItemIcon>

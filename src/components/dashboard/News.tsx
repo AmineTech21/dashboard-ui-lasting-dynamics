@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import pdp from '../../assets/images/pdp.jpg';
-import Image from 'next/future/image';
 import getNews from '../../api/getNews';
 
 const News = () => {
