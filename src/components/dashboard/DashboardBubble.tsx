@@ -38,7 +38,7 @@ const DashboardBubble = ({ icon, title, textRight, textLink, iconRight, iconLink
                 </>
             ) : (
                 <>
-                    <Grid className={`${restTailwindClass} p-6 bg-white rounded-[10px] shadow-md shadow-[#32324738]`} item md={md}>
+                    <Grid className={`${restTailwindClass} p-6 bg-white rounded-[10px] shadow-md shadow-[#32324738]`} item xs={xs} md={md}>
                         <div className="flex justify-between">
                             <div className="flex flex-row items-center">
                                 <div className="mr-[18px] text-xl">{icon}</div>
